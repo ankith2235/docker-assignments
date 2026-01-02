@@ -1,79 +1,66 @@
 # Docker Assignment – 5 Projects
 
-This repository contains Docker projects completed as part of my **Cloud & DevOps training (Intellipaat – IIT Roorkee iHUB DivyaSampark)**.  
-Each project focuses on practical, hands-on usage of Docker with real commands, configurations, and screenshots.
+This repository contains Docker assignments completed as part of my Cloud & DevOps training. The projects demonstrate hands-on experience with Docker containers, images, Docker Hub, and Dockerfile automation using Ubuntu.
 
 ---
 
-## 🔹 Project 1: Docker Installation & Basic Commands
-**Objective:**  
-To install Docker on a Linux system and understand basic Docker commands.
-
-**Key Tasks:**
-- Installed Docker Engine
-- Verified installation using `docker --version`
-- Used basic commands: `docker run`, `docker ps`, `docker images`
-- Pulled images from Docker Hub
+## 🔹 Project 1: Running Apache on Ubuntu Container
+**Tasks Performed:**
+1. Pulled Ubuntu container from Docker Hub  
+2. Ran the container and mapped container port 80 to local port 80  
+3. Installed Apache2 inside the container  
+4. Verified Apache default page access via browser  
 
 ---
 
-## 🔹 Project 2: Dockerfile Creation
-**Objective:**  
-To create custom Docker images using a Dockerfile.
-
-**Key Tasks:**
-- Wrote a Dockerfile
-- Used instructions like `FROM`, `RUN`, `COPY`, `CMD`
-- Built Docker images using `docker build`
-- Ran containers from custom images
+## 🔹 Project 2: Creating a Docker Image from Container
+**Tasks Performed:**
+1. Saved the container created in Project 1 as a Docker image  
+2. Launched a new container from this image  
+3. Mapped container port 80 to local port 81  
+4. Started Apache2 service inside the container  
+5. Verified access through browser  
 
 ---
 
-## 🔹 Project 3: Containerizing a Sample Application
-**Objective:**  
-To containerize a sample application using Docker.
-
-**Key Tasks:**
-- Created Docker image for an application
-- Exposed application ports
-- Ran the application inside a container
-- Verified application access from browser
+## 🔹 Project 3: Docker Hub Image Upload and Deployment
+**Tasks Performed:**
+1. Used the Docker image created in Project 2  
+2. Tagged and uploaded the image to Docker Hub  
+3. Pulled the image on a separate machine  
+4. Launched the container on port 80  
+5. Started Apache2 service and verified browser access  
 
 ---
 
-## 🔹 Project 4: Docker Volumes & Networking
-**Objective:**  
-To understand data persistence and container communication.
-
-**Key Tasks:**
-- Created Docker volumes
-- Mounted volumes to containers
-- Implemented Docker networking
-- Tested container-to-container communication
+## 🔹 Project 4: Apache Automation Using Dockerfile
+**Tasks Performed:**
+1. Created a Dockerfile with the following specifications:
+   - Ubuntu base image  
+   - Apache2 installation  
+   - Apache2 automatically starts when the container runs  
+2. Built Docker image using the Dockerfile  
 
 ---
 
-## 🔹 Project 5: Docker Image Build & Push to Docker Hub
-**Objective:**  
-To build and push Docker images to Docker Hub.
-
-**Key Tasks:**
-- Tagged Docker images
-- Logged into Docker Hub
-- Pushed images to Docker Hub repository
-- Verified image availability online
+## 🔹 Project 5: Deploying Custom HTML Page Using Dockerfile
+**Tasks Performed:**
+1. Created a sample HTML file  
+2. Used the Dockerfile from Project 4  
+3. Replaced the default Apache web page with the custom HTML file inside the container  
 
 ---
 
 ## 🛠 Tools & Technologies Used
-- Docker
-- Linux
-- Git & GitHub
-- Amazon Web Services (AWS)
-- PuTTY (for remote server access to AWS EC2)
+- Docker  
+- Docker Hub  
+- Amazon Web Services (AWS) – EC2 (Ubuntu AMI)  
+- Linux  
+- Git & GitHub  
+- PuTTY (SSH access)
 
 ---
 
 ## 📌 Notes
-- Detailed explanations and screenshots for each project are available in the assignment document included in this repository.
-- These projects demonstrate hands-on experience with Docker fundamentals and real-world DevOps practices.
+- Detailed documentation and screenshots for each project are included in the assignment file available in this repository.
+- These projects focus on real-world Docker usage and DevOps fundamentals.
